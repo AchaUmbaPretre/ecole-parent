@@ -7,7 +7,7 @@ const Topbar = () => {
   return (
     <>
       <div className="topbar">
-        <span className="logo">achadmin</span>
+        <span className="logo">ITI Kitomesa</span>
         <div className="topbar-right">
           <div className="topbar-icons">
             <NotificationsNone/>

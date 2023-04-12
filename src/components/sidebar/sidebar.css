@@ -1,7 +1,8 @@
 .sidebar{
     flex: 2;
     height: calc(100vh - 50px);
-    background: rgba(196, 24, 24, 0.014);
+    /* background: rgba(196, 24, 24, 0.014); */
+    background: rgba(15, 15, 15, 0.945);
     top:50px;
     position: sticky;
 }
@@ -27,10 +28,13 @@
     cursor: pointer;
     border-radius: 10px;
     font-size: 13px;
+    color: #fff;
 }
 
-.sidebarLi.active, .sidebarLi:hover{
-    background: rgba(196, 24, 24, 0.082);
+/* .sidebarLi.active,  */.sidebarLi:hover{
+    /* background: rgba(196, 24, 24, 0.082); */
+    background: #FFF;
+    color: black;
 }
 .sidebarIcon{
     font-size: 20px !important;

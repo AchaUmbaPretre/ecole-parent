@@ -8,11 +8,11 @@ const FeatedInfo = () => {
         <div className="featedInfo">
             <div className="featedInfo-row">
                 <div className="feated-left">
-                    <h3 className="featedInfo-h3">Revenue</h3>
+                    <h3 className="featedInfo-h3">Accueil</h3>
                     <div className="feated-row">
-                        <span className="feated-somme">$500</span>
+                        <span className="feated-somme"></span>
                         <div className="feated-rows">
-                            <span className="feated-span">-9.10</span>
+                            <span className="feated-span"></span>
                             <ArrowDownward className="feated-icon"/>
                         </div>
                     </div>
@@ -25,9 +25,9 @@ const FeatedInfo = () => {
 
             <div className="featedInfo-row">
                 <div className="feated-left">
-                    <h3 className="featedInfo-h3">Vente</h3>
+                    <h3 className="featedInfo-h3">Publications</h3>
                     <div className="feated-row">
-                        <span className="feated-somme">$500</span>
+                        <span className="feated-somme">50</span>
                         <div className="feated-rows">
                             <span className="feated-span">-9.10</span>
                             <ArrowDownward className="feated-icon"/>
@@ -42,9 +42,9 @@ const FeatedInfo = () => {
 
             <div className="featedInfo-row">
                 <div className="feated-left">
-                    <h3 className="featedInfo-h3">Cout</h3>
+                    <h3 className="featedInfo-h3">Presences</h3>
                     <div className="feated-row">
-                        <span className="feated-somme">$500</span>
+                        <span className="feated-somme">20</span>
                         <div className="feated-rows">
                             <span className="feated-span">+8.10</span>
                             <ArrowUpward className="feated-icon green"/>

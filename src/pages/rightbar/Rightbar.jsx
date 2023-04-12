@@ -11,7 +11,7 @@ const Rightbar = () => {
     <>
         <div className="rightbar">
           <FeatedInfo/>
-          <Chart data={data} title='Analyse des utilisateurs' grid datakey='Active User'/>
+          <Chart data={data} title='Analyse de presence des eleves' grid datakey='Active User'/>
           <div className="rightbarContainer">
             <WidgetSm/>
             <WidgetLg/>

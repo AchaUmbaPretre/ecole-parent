@@ -11,7 +11,7 @@ const Sidebar = () => {
               <div className="sidebarMenu">
                 <h3 className="sidebarH3">Dashboard</h3>
                 <ul className="sidebarUl">
-                  <Link><li className="sidebarLi active"><LineStyle className="sidebarIcon"/>Accueil</li></Link>
+                  <Link to={'/'}><li className="sidebarLi active"><LineStyle className="sidebarIcon"/>Accueil</li></Link>
                   <Link to={'/users'}><li className="sidebarLi"><Timeline className="sidebarIcon"/>Publications</li></Link>
                   <Link><li className="sidebarLi"><TrendingUp className="sidebarIcon"/>Présences</li></Link>
                 </ul>

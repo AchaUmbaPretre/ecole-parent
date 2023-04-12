@@ -1,0 +1,9 @@
+.rightbar{
+    padding: 20px;
+    width: 100%;
+}
+.rightbarContainer{
+    display: flex;
+    padding: 20px 0;
+    gap: 20px;
+}

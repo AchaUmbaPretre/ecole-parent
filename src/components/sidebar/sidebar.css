@@ -2,7 +2,7 @@
     flex: 2;
     height: calc(100vh - 50px);
     /* background: rgba(196, 24, 24, 0.014); */
-    background: rgba(15, 15, 15, 0.945);
+    background: #1f1e1efd;
     top:50px;
     position: sticky;
 }
@@ -14,7 +14,7 @@
     margin-bottom: 10px;
 }
 .sidebarH3{
-    font-size: 13px;
+    font-size: 18px;
     color: rgb(158, 152, 152);
 }
 .sidebarUl{
@@ -27,8 +27,8 @@
     padding: 5px;
     cursor: pointer;
     border-radius: 10px;
-    font-size: 13px;
-    color: #fff;
+    font-size: 15px;
+    color: #FFF;
 }
 
 /* .sidebarLi.active,  */.sidebarLi:hover{

@@ -1,6 +1,5 @@
 import './users.css'
 import { DataGrid } from '@mui/x-data-grid'
-import acha from './../../assets/acha.jpg'
 import { rows } from '../../dummy'
 import { useState } from 'react'
 import { DeleteOutline } from '@mui/icons-material'

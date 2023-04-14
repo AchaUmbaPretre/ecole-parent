@@ -1,4 +1,4 @@
-import { ArrowDownward,ArrowUpward,PriceChange,TrendingUp, TurnedInTwoTone } from '@mui/icons-material'
+import { ArrowDownward,ArrowUpward,LineStyle,ListAltOutlined,PublishedWithChangesTwoTone, TurnedInTwoTone } from '@mui/icons-material'
 import React from 'react'
 import './featedInfo.css'
 
@@ -16,10 +16,10 @@ const FeatedInfo = () => {
                             <ArrowDownward className="feated-icon"/>
                         </div>
                     </div>
-                    <span className="feated-desc">Par rapport au mois dernier</span>
+                    <span className="feated-desc"></span>
                 </div>
                 <div className="feated-right">
-                    <TurnedInTwoTone className="feated-icon-right"/>   
+                    <LineStyle className="feated-icon-right"/>   
                 </div>
             </div>
 
@@ -36,7 +36,7 @@ const FeatedInfo = () => {
                     <span className="feated-desc">Par rapport au mois dernier</span>
                 </div>
                 <div className="feated-right">
-                    <TrendingUp className="feated-icon-right"/>   
+                    <PublishedWithChangesTwoTone className="feated-icon-right"/>   
                 </div>
             </div>
 
@@ -53,7 +53,7 @@ const FeatedInfo = () => {
                     <span className="feated-desc">Par rapport au mois dernier</span>
                 </div>
                 <div className="feated-right">
-                    <PriceChange className="feated-icon-right"/>   
+                    <ListAltOutlined className="feated-icon-right"/>   
                 </div>
             </div>
         </div>

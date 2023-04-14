@@ -1,7 +1,12 @@
 import { ListAltOutlined } from '@mui/icons-material'
 import './presence.css'
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 const Presence = () => {
+    const [startDate, setStartDate] = useState(new Date());
   return (
     <>
         <div className="presence">
@@ -13,7 +18,7 @@ const Presence = () => {
                 <div className="presence-rows">
                     <h2 className="presence-sous-h2">MOIS ET ANNEE</h2>
                     <div className="presence-row">
-                        <input type="date" className="presence-control" />
+                        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="presence-control"/>
                         <button className="presence-btn">Recherche</button>
                     </div>
                 </div>

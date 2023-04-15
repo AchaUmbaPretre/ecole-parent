@@ -1,6 +1,6 @@
 import './user.css'
 import acha from './../../assets/acha.jpg'
-import { DateRange, DownloadDoneOutlined, MailLockOutlined, MessageOutlined, NotListedLocationOutlined, PhoneAndroidOutlined, SupervisedUserCircleOutlined, VerifiedUserOutlined } from '@mui/icons-material'
+import { DateRange, DownloadDoneOutlined, MailLockOutlined, NotListedLocationOutlined, PhoneAndroidOutlined, SupervisedUserCircleOutlined } from '@mui/icons-material'
 
 const User = () => {
   return (

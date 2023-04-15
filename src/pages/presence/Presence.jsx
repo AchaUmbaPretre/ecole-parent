@@ -79,15 +79,15 @@ const Presence = () => {
                         <td className="line-td">Acha ndambi</td>
                             <td className="line-td">
                                 <div className="present-rows">
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Present</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Absent</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Total</span>
                                         <span className="present-num">20</span>
                                     </div>
@@ -123,15 +123,15 @@ const Presence = () => {
                         <td className="line-td">Acha</td>
                             <td className="line-td">
                                 <div className="present-rows">
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Present</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Absent</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Total</span>
                                         <span className="present-num">20</span>
                                     </div>
@@ -167,15 +167,15 @@ const Presence = () => {
                         <td className="line-td">Acha Umba</td>
                             <td className="line-td">
                                 <div className="present-rows">
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Present</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Absent</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Total</span>
                                         <span className="present-num">20</span>
                                     </div>
@@ -211,15 +211,15 @@ const Presence = () => {
                         <td className="line-td">Ndambi</td>
                             <td className="line-td">
                                 <div className="present-rows">
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Present</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Absent</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Total</span>
                                         <span className="present-num">20</span>
                                     </div>
@@ -255,59 +255,15 @@ const Presence = () => {
                         <td className="line-td">Movoto</td>
                             <td className="line-td">
                                 <div className="present-rows">
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Present</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Absent</span>
                                         <span className="present-num">10</span>
                                     </div>
-                                    <div className="present-row">
-                                        <span className="present-title">Total</span>
-                                        <span className="present-num">20</span>
-                                    </div>
-                                </div>
-                            </td>
-                            <td className="line-td">X</td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td">X</td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td">X</td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td">X</td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td"></td>
-                            <td className="line-td">X</td>
-                        </tr>
-
-                        <tr className="line-even">
-                        <td className="line-td">Movoto</td>
-                            <td className="line-td">
-                                <div className="present-rows">
-                                    <div className="present-row">
-                                        <span className="present-title">Present</span>
-                                        <span className="present-num">10</span>
-                                    </div>
-                                    <div className="present-row">
-                                        <span className="present-title">Absent</span>
-                                        <span className="present-num">10</span>
-                                    </div>
-                                    <div className="present-row">
+                                    <div className="present-row3">
                                         <span className="present-title">Total</span>
                                         <span className="present-num">20</span>
                                     </div>

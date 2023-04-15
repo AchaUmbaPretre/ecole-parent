@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import './sidebar.css'
-import { LineStyle,ListAltOutlined, Person, Person3, Person3Outlined, Person4TwoTone, PublishedWithChangesTwoTone } from '@mui/icons-material'
+import { LineStyle,ListAltOutlined, Person3Outlined, Person4TwoTone, PublishedWithChangesTwoTone } from '@mui/icons-material'
 
 const Sidebar = () => {
   return (

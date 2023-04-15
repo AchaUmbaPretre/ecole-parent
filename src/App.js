@@ -6,6 +6,7 @@ import Users from './pages/users/Users';
 import './app.css'
 import Rightbar from './pages/rightbar/Rightbar';
 import User from './pages/user/User';
+import Eleves from './pages/eleves/Eleves';
 import Presence from './pages/presence/Presence';
 
 function App() {
@@ -40,6 +41,14 @@ function App() {
       {
         path: '/users/:id',
         element: <User/>
+      },
+      {
+        path: '/eleves',
+        element: <Eleves/>
+      },
+      {
+        path: '/publications',
+        element: <Users/>
       },
       {
         path: '/presence',

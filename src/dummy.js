@@ -56,74 +56,101 @@ export const data = [
   export const rows = [
     {
       id: 1,
-      username: "Acha umba",
-      avatar: './../../assets/acha.jpg',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      nom: "Ndambi",
+      avatar: '',
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 2,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "movoto",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 3,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 4,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 5,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 6,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 7,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 8,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
     {
       id: 9,
-      username: "Acha umba",
+      nom: "Ndambi",
       avatar: '',
-      email: "achandambi@gmail.com",
-      status: "active",
-      transactions: '$120.00'
+      postnom: "umba",
+      prenom: "acha",
+      date_de_naissance: "12/01/2022",
+      lieu_de_naissance: "kinshasa",
+      sexe: "M",
+      fillier: 'math'
     },
   ]

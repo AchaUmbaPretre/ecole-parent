@@ -18,7 +18,7 @@ const Presence = () => {
                 <div className="presence-rows">
                     <h2 className="presence-sous-h2">MOIS ET ANNEE</h2>
                     <div className="presence-row">
-                        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="presence-control"/>
+                        <DatePicker showIcon selected={startDate} onChange={(date) => setStartDate(date)} className="presence-control"/>
                         <button className="presence-btn">Recherche</button>
                     </div>
                 </div>

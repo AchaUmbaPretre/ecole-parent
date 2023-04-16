@@ -1,4 +1,4 @@
-import { ArrowDownward,ArrowUpward,LineStyle,ListAltOutlined,PublishedWithChangesTwoTone, TurnedInTwoTone } from '@mui/icons-material'
+import { ArrowDownward,ArrowUpward,ListAltOutlined,Person3Outlined,PublishedWithChangesTwoTone } from '@mui/icons-material'
 import React from 'react'
 import './featedInfo.css'
 
@@ -8,7 +8,7 @@ const FeatedInfo = () => {
         <div className="featedInfo">
             <div className="featedInfo-row">
                 <div className="feated-left">
-                    <h3 className="featedInfo-h3">Accueil</h3>
+                    <h3 className="featedInfo-h3">Eleves</h3>
                     <div className="feated-row">
                         <span className="feated-somme"></span>
                         <div className="feated-rows">
@@ -16,10 +16,10 @@ const FeatedInfo = () => {
                             <ArrowDownward className="feated-icon"/>
                         </div>
                     </div>
-                    <span className="feated-desc"></span>
+                    <span className="feated-desc">Par rapport au mois dernier</span>
                 </div>
                 <div className="feated-right">
-                    <LineStyle className="feated-icon-right"/>   
+                    <Person3Outlined className="feated-icon-right"/>   
                 </div>
             </div>
 

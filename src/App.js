@@ -8,6 +8,7 @@ import Rightbar from './pages/rightbar/Rightbar';
 import User from './pages/user/User';
 import Eleves from './pages/eleves/Eleves';
 import Presence from './pages/presence/Presence';
+import Inscription from './pages/inscription/Inscription';
 
 function App() {
 
@@ -47,8 +48,8 @@ function App() {
         element: <Eleves/>
       },
       {
-        path: '/publications',
-        element: <Users/>
+        path: '/inscription',
+        element: <Inscription/>
       },
       {
         path: '/presence',

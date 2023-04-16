@@ -42,6 +42,7 @@ const Eleves = () => {
 
   return (
     <>
+      
       <div className="eleve">
         <DataGrid rows={data} columns={columns} pageSize={10} checkboxSelection className="userTable" />
       </div>

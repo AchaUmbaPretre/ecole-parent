@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider, Route, Outlet, Navigate } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/topbar/Topbar';
 import Login from './pages/login/Login';
@@ -9,6 +9,7 @@ import User from './pages/user/User';
 import Eleves from './pages/eleves/Eleves';
 import Presence from './pages/presence/Presence';
 import Inscription from './pages/inscription/Inscription';
+import Professeur from './pages/professeur/Professeur';
 
 function App() {
 
@@ -49,7 +50,7 @@ function App() {
       },
       {
         path: '/professeur',
-        element: <Presence/>
+        element: <Professeur/>
       },
       {
         path: '/publications',

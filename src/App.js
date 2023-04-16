@@ -36,10 +36,6 @@ function App() {
           element: <Rightbar/>
       },
       {
-        path: '/users',
-        element: <Users/>
-      },
-      {
         path: '/users/:id',
         element: <User/>
       },
@@ -50,6 +46,14 @@ function App() {
       {
         path: '/inscription',
         element: <Inscription/>
+      },
+      {
+        path: '/professeur',
+        element: <Presence/>
+      },
+      {
+        path: '/publications',
+        element: <Users/>
       },
       {
         path: '/presence',

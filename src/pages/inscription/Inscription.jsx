@@ -1,5 +1,6 @@
 import { InsertChartOutlinedSharp } from '@mui/icons-material'
 import './inscription.css'
+import user from '../../assets/img/user.jpg'
 
 const Inscription = () => {
   return (
@@ -53,7 +54,7 @@ const Inscription = () => {
                         <button className="inscription-btn">Valider</button>
                     </div>
                     <div className="inscription-right">
-                        BBBBBBBBBBBBBBBBBB
+                        <img src={user} alt="" className="inscription-img" />
                     </div>
                 </div>
             </div>

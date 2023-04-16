@@ -2,6 +2,7 @@
     margin: 30px;
     padding: 20px;
     background: #fff;
+    border-radius: 5px;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75)
 }
@@ -40,6 +41,10 @@
     outline: none;
     border: 1px solid #d1cbcb88;
     border-radius: 5px;
+    box-shadow: 0px 0px 15px -10px rgba(63, 63, 63, 0.315)
+}
+.inscription-input:focus{
+    border: 1px solid #2b7df867;
 }
 .inscription-btn{
     display: block;
@@ -48,12 +53,19 @@
     margin-top: 10px;
     border-radius: 5px;
     color: #fff;
-    background: #0D6EFD;
+    background: #1064e2;
     font-size: 12px;
     cursor: pointer;
     width: 100%;
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75)
+}
+.inscription-btn:hover{
+    background: #2675ebef;
 }
 .inscription-right{
     flex: 2;
-    background: black;
+}
+.inscription-img{
+    width: 100%;
+    height: 230px;
 }

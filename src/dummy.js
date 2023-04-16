@@ -63,7 +63,7 @@ export const data = [
       date_de_naissance: "12/01/2022",
       lieu_de_naissance: "kinshasa",
       sexe: "M",
-      fillier: 'math'
+      fillier: 'info'
     },
     {
       id: 2,
@@ -74,7 +74,7 @@ export const data = [
       date_de_naissance: "12/01/2022",
       lieu_de_naissance: "kinshasa",
       sexe: "M",
-      fillier: 'math'
+      fillier: 'info'
     },
     {
       id: 3,

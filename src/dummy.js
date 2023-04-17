@@ -52,105 +52,190 @@ export const data = [
 
 ]
 
+export const rows = [
+  {
+    id: 1,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'info'
+  },
+  {
+    id: 2,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "movoto",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'info'
+  },
+  {
+    id: 3,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'math'
+  },
+  {
+    id: 4,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'math'
+  },
+  {
+    id: 5,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'math'
+  },
+  {
+    id: 6,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'math'
+  },
+  {
+    id: 7,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'math'
+  },
+  {
+    id: 8,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'math'
+  },
+  {
+    id: 9,
+    nom: "Ndambi",
+    avatar: '',
+    postnom: "umba",
+    prenom: "acha",
+    date_de_naissance: "12/01/2022",
+    lieu_de_naissance: "kinshasa",
+    sexe: "M",
+    fillier: 'math'
+  },
+]
+  
 
-  export const rows = [
+
+  export const DataPresence = [
     {
       id: 1,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'info'
+      adresse: "limete",
+      telephone : +243824562776,
+      cours: 'electricité'
     },
     {
       id: 2,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "movoto",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'info'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
     {
       id: 3,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'math'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
     {
       id: 4,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'math'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
     {
       id: 5,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'math'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
     {
       id: 6,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'math'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
     {
       id: 7,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'math'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
     {
       id: 8,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'math'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
     {
       id: 9,
       nom: "Ndambi",
-      avatar: '',
       postnom: "umba",
       prenom: "acha",
-      date_de_naissance: "12/01/2022",
-      lieu_de_naissance: "kinshasa",
-      sexe: "M",
-      fillier: 'math'
+      adresse : "matete",
+      telephone : +243824562776,
+      cours: 'informatique'
     },
   ]

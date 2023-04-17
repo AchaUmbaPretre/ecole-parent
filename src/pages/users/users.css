@@ -1,12 +1,50 @@
 .user{
+    margin: 20px;
     padding: 20px;
-    height: 100%;
-}
-.userTable{
-    background: white;
     -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
     border-radius: 10px;
+    height: 100%;
+    background: #fff;
+    position: relative;
+}
+.usernew{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.userbtn{
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background: #3bb077;
+    color: #fff;
+    cursor: pointer;
+}
+.user-rows{
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.589);
+    z-index: 2;
+}
+.user-pop{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    background: #fff;
+    padding: 30px;
+}
+.userTable{
+    background: white;
+    border-radius: 10px;
+    height: 90%!important;
 }
 .userList{
     display: flex;

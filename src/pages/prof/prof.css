@@ -21,6 +21,9 @@
     color: #fff;
     cursor: pointer;
 }
+.userbtn:hover{
+    background: #3bb077be;
+}
 .user-rows{
     position: absolute;
     height: 100vh;
@@ -30,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.589);
+    background: rgba(0, 0, 0, 0.678);
     z-index: 2;
 }
 .user-pop{
@@ -40,6 +43,20 @@
     gap: 20px;
     background: #fff;
     padding: 30px;
+}
+.user-clock{
+    position: absolute;
+    top: -10px;
+    right:-10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+.user-clock:hover{
+    transform: scale(1.1);
 }
 .userTable{
     background: white;

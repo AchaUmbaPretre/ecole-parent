@@ -14,7 +14,7 @@ const Sidebar = () => {
                   <Link to={'/'}><li className="sidebarLi active"><LineStyle className="sidebarIcon"/>Accueil</li></Link>
                   <Link to={'/eleves'}><li className="sidebarLi"><Person3Outlined className="sidebarIcon"/>Eleves</li></Link>
                   <Link to={'/inscription'}><li className="sidebarLi"><PublishedWithChangesTwoTone className="sidebarIcon"/>Inscription</li></Link>
-                  <Link to={'/professeur'}><li className="sidebarLi"><Person4TwoTone className="sidebarIcon"/>Professeurs</li></Link>
+                  <Link to={'/prof'}><li className="sidebarLi"><Person4TwoTone className="sidebarIcon"/>Professeurs</li></Link>
                   <Link to={'/publications'}><li className="sidebarLi"><PublishedWithChangesTwoTone className="sidebarIcon"/>Publications</li></Link>
                   <Link to={'/presence'} ><li className="sidebarLi"><ListAltOutlined  className="sidebarIcon"/>Présences</li></Link>
                 </ul>

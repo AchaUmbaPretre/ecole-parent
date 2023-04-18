@@ -2,14 +2,14 @@ import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Sidebar from './components/sidebar/Sidebar';
 import Topbar from './components/topbar/Topbar';
 import Login from './pages/login/Login';
-import Users from './pages/users/Users';
+import Prof from './pages/prof/Prof';
 import './app.css'
 import Rightbar from './pages/rightbar/Rightbar';
 import User from './pages/user/User';
 import Eleves from './pages/eleves/Eleves';
 import Presence from './pages/presence/Presence';
 import Inscription from './pages/inscription/Inscription';
-import Professeur from './pages/professeur/Professeur';
+import Publication from './pages/publication/Publication';
 
 function App() {
 
@@ -49,12 +49,12 @@ function App() {
         element: <Inscription/>
       },
       {
-        path: '/professeur',
-        element: <Professeur/>
+        path: '/prof',
+        element: <Prof/>
       },
       {
         path: '/publications',
-        element: <Users/>
+        element: <Publication/>
       },
       {
         path: '/presence',

@@ -5,6 +5,7 @@ import { rows } from '../../dummy'
 import { useState } from 'react'
 import { DeleteOutline } from '@mui/icons-material'
 import { Link } from 'react-router-dom'
+import acha from './../../assets/acha.jpg';
 
 const Eleves = () => {
 
@@ -19,7 +20,7 @@ const Eleves = () => {
     {field: 'id', HeaderName: 'ID', width: 70},
     {field: 'nom', HeaderName: 'Nom', width: 150, renderCell: (params) =>{
       return <div className="userList">
-                <img src={params.row.avatar} alt="" className="userImg" />
+                <img src={acha} alt="" className="userImg" />
                 {params.row.nom}
              </div>
     }},

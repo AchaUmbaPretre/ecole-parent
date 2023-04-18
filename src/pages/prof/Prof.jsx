@@ -1,13 +1,14 @@
-import './users.css'
+import './prof.css'
 import { DataGrid } from '@mui/x-data-grid'
 import { DataPresence } from '../../dummy'
 import { useState } from 'react'
-import { DeleteOutline, MarkAsUnreadOutlined, MultilineChart, MultipleStop, Person, Timeline, Timer } from '@mui/icons-material'
+import { Close, DeleteOutline, Person } from '@mui/icons-material'
 import { Link } from 'react-router-dom';
 import acha from './../../assets/acha.jpg';
 
 const Users = () => {
   const [data, setData] = useState(DataPresence);
+  const [close, setClose] = useState(false);
 
   const HandleDelete = (id) =>{
     const dataFilter = data.filter(item=> item.id !== id)
@@ -43,10 +44,11 @@ const Users = () => {
       <div className="user">
         <div className="usernew">
           <Person/>
-        <button className="userbtn">New professeur</button>
+        <button className="userbtn" onClick={()=>{setClose(!close)}} >New professeur</button>
+        { close &&
         <div className="user-rows">
           <div className="user-pop">
-            <Timer/>
+            <Close className='user-clock' onClick={()=>{setClose(!close)}}/>
             <div className="inscription-control">
               <label htmlFor="" className="inscription-nom">Nom</label>
               <input type="text" className="inscription-input" />
@@ -54,40 +56,31 @@ const Users = () => {
 
             <div className="inscription-control">
               <label htmlFor="" className="inscription-nom">Postnom</label>
-                <input type="text" className="inscription-input" />
+                <input type="text" className="inscription-input"  />
             </div>
 
             <div className="inscription-control">
               <label htmlFor="" className="inscription-nom">Prenom</label>
-              <input type="text" className="inscription-input" />
+              <input type="text" className="inscription-input"  />
             </div>
 
             <div className="inscription-control">
-              <label htmlFor="" className="inscription-nom">Date de naissance</label>
-                <input type="text" className="inscription-input" />
+              <label htmlFor="" className="inscription-nom">Adresse</label>
+                <input type="text" className="inscription-input"  />
             </div>
 
             <div className="inscription-control">
-              <label htmlFor="" className="inscription-nom">Lieu de naissance</label>
-              <input type="text" className="inscription-input" />
+              <label htmlFor="" className="inscription-nom">Telephone</label>
+              <input type="text" className="inscription-input"  />
             </div>
 
             <div className="inscription-control">
-              <label htmlFor="" className="inscription-nom">Sexe</label>
-              <input type="text" className="inscription-input" />
-            </div>
-
-            <div className="inscription-control">
-              <label htmlFor="" className="inscription-nom">Fillier</label>
-              <input type="text" className="inscription-input largeur-input" />
-            </div>
-            <div className="inscription-control">
-              <label htmlFor="" className="inscription-nom">Annee scolaire</label>
-              <input type="text" className="inscription-input largeur-input" />
+              <label htmlFor="" className="inscription-nom">Cours</label>
+              <input type="text" className="inscription-input"  />
             </div>
             <button className="inscription-btn">Valider</button>
           </div>
-        </div>
+        </div>}
       </div> 
         <DataGrid rows={data} columns={columns} pageSize={10} checkboxSelection className="userTable" />
       </div>

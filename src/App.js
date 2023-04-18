@@ -10,6 +10,7 @@ import Eleves from './pages/eleves/Eleves';
 import Presence from './pages/presence/Presence';
 import Inscription from './pages/inscription/Inscription';
 import Publication from './pages/publication/Publication';
+import Register from './pages/register/Register';
 
 function App() {
 
@@ -65,6 +66,10 @@ function App() {
     {
       path: '/login',
       element: <Login/>
+    },
+    {
+      path: '/register',
+      element: <Register/>
     }
   ])
 

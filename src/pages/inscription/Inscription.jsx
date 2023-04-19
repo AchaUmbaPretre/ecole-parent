@@ -28,17 +28,17 @@ const Inscription = () => {
                     <div className="inscription-left">
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom" >Nom</label>
-                            <input type="text" className="inscription-input" name='nom' onChange={handChange} />
+                            <input type="text" className="inscription-input" name='nom' onChange={handChange} placeholder="ecrire le nom..." />
                         </div>
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Postnom</label>
-                            <input type="text" className="inscription-input" onChange={handChange} name='postnom' />
+                            <input type="text" className="inscription-input" onChange={handChange} name='postnom' placeholder="ecrire le postnom..." />
                         </div>
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Prenom</label>
-                            <input type="text" className="inscription-input" onChange={handChange} name='prenom' />
+                            <input type="text" className="inscription-input" onChange={handChange} name='prenom' placeholder="ecrire le prenom..." />
                         </div>
 
                         <div className="inscription-control">
@@ -52,17 +52,18 @@ const Inscription = () => {
                         </div>
 
                         <div className="inscription-control">
-                            <label htmlFor="" className="inscription-nom">Sexe</label>
-                            <input type="text" className="inscription-input" onChange={handChange} />
-                        </div>
-
-                        <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Fillier</label>
-                            <input type="text" className="inscription-input largeur-input" onChange={handChange} />
+                            <input type="text" className="inscription-input" onChange={handChange} />
                         </div>
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Annee scolaire</label>
-                            <input type="text" className="inscription-input largeur-input" onChange={handChange} />
+                            <input type="date" className="inscription-input largeur-input" onChange={handChange} />
+                        </div>
+                        <div className="inscription-radio">
+                            <input type="radio" value={"garcon"} name='sexe' />
+                            <label htmlFor="" className="inscription-nom">Homme</label>
+                            <input type="radio" value={"femme"} name='sexe' />
+                            <label htmlFor="" className="inscription-nom">Femme</label>
                         </div>
                         <button className="inscription-btn">Valider</button>
                     </div>

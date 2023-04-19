@@ -21,8 +21,8 @@ const Inscription = () => {
         <div className="inscription-container">
             <div className="inscription">
                 <div className="inscription-title">
-                    <InsertChartOutlinedSharp className='presence-icon' />
-                    <h2 className="inscription-h2">Inscription</h2>
+                    <InsertChartOutlinedSharp className='inscription-icon' />
+                    <h2 className="inscription-h2">INSCRIPTION</h2>
                 </div>
                 <div className="inscription-rows">
                     <div className="inscription-left">
@@ -53,18 +53,39 @@ const Inscription = () => {
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Fillier</label>
-                            <input type="text" className="inscription-input" onChange={handChange} />
+                            <select name="fillier" id="" className="inscription-select" >
+                                <optgroup label='secondaire'>
+                                    <option value="premiere">premiere</option>
+                                    <option value="deuxieme">deuxieme</option>
+                                </optgroup>
+                                <optgroup label='Electricité'>
+                                    <option value="3ieme electricité">3ieme</option>
+                                    <option value="4ieme electricité">4ieme</option>
+                                    <option value="5ieme electricité">5ieme</option>
+                                    <option value="6ieme electricité">6ieme</option>
+                                </optgroup>
+                                <optgroup label='Mecanique'>
+                                    <option value="3ieme macanique">3ieme</option>
+                                    <option value="4ieme macanique">4ieme</option>
+                                    <option value="5ieme macanique">5ieme</option>
+                                    <option value="6ieme macanique">6ieme</option>
+                                </optgroup>
+                            </select>
                         </div>
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Annee scolaire</label>
                             <input type="date" className="inscription-input largeur-input" onChange={handChange} />
                         </div>
-                        <div className="inscription-radio">
-                            <input type="radio" value={"garcon"} name='sexe' />
-                            <label htmlFor="" className="inscription-nom">Homme</label>
-                            <input type="radio" value={"femme"} name='sexe' />
-                            <label htmlFor="" className="inscription-nom">Femme</label>
+                        <div className="inscription-row-radio">
+                            <label htmlFor="" className="inscription-nom">Sexe :</label>
+                            <div className="inscription-radio">
+                                <input type="radio" value={"garcon"} name='sexe' />
+                                <label htmlFor="" className="inscription-nom">Homme</label>
+                                <input type="radio" value={"femme"} name='sexe' />
+                                <label htmlFor="" className="inscription-nom">Femme</label>
+                            </div>
                         </div>
+                        
                         <button className="inscription-btn">Valider</button>
                     </div>
                     <div className="inscription-right">

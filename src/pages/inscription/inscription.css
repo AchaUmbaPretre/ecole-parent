@@ -9,10 +9,13 @@
 .inscription-title{
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+.inscription-icon{
+    font-size: 2.5rem!important;
 }
 .inscription-h2{
-    font-weight: 500;
-    font-size: 14px;
+    font-size: 2rem;
     color: #555
 }
 .inscription-rows{
@@ -41,7 +44,7 @@
     gap: 10px;
     margin-top: 15px;
 }
-.inscription-input{
+.inscription-input,.inscription-select{
     padding: 10px;
     outline: none;
     border: 1px solid #d1cbcb88;
@@ -51,6 +54,7 @@
 .inscription-input:focus{
     border: 1px solid #2b7df867;
 }
+
 .inscription-btn{
     display: block;
     border: none;

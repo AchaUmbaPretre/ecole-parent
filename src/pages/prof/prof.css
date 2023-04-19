@@ -42,7 +42,23 @@
     grid-template-columns: repeat(2,1fr);
     gap: 20px;
     background: #fff;
-    padding: 30px;
+    padding: 50px;
+    border-radius: 4px;
+}
+.Prof-control{
+    display: flex;
+    flex-direction: column;
+}
+.Prof-input{
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #d1cbcb88;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px -10px rgba(63, 63, 63, 0.315)
+}
+.Prof-input:focus{
+    border: 1px solid #2b7df867;
 }
 .user-clock{
     position: absolute;

@@ -49,34 +49,34 @@ const Users = () => {
         <div className="user-rows">
           <div className="user-pop">
             <Close className='user-clock' onClick={()=>{setClose(!close)}}/>
-            <div className="inscription-control">
+            <div className="Prof-control">
               <label htmlFor="" className="inscription-nom">Nom</label>
-              <input type="text" className="inscription-input" />
+              <input type="text" className="Prof-input" placeholder='ecrire le nom...' />
             </div>
 
-            <div className="inscription-control">
+            <div className="Prof-control">
               <label htmlFor="" className="inscription-nom">Postnom</label>
-                <input type="text" className="inscription-input"  />
+                <input type="text" className="Prof-input" placeholder='ecrire le postnom...'  />
             </div>
 
-            <div className="inscription-control">
+            <div className="Prof-control">
               <label htmlFor="" className="inscription-nom">Prenom</label>
-              <input type="text" className="inscription-input"  />
+              <input type="text" className="Prof-input" placeholder='ecrire le prenom...' />
             </div>
 
-            <div className="inscription-control">
+            <div className="Prof-control">
               <label htmlFor="" className="inscription-nom">Adresse</label>
-                <input type="text" className="inscription-input"  />
+                <input type="text" className="Prof-input" placeholder="ecrire l'adresse..." />
             </div>
 
-            <div className="inscription-control">
+            <div className="Prof-control">
               <label htmlFor="" className="inscription-nom">Telephone</label>
-              <input type="text" className="inscription-input"  />
+              <input type="tel" className="Prof-input" placeholder='ecrire le numero...' />
             </div>
 
-            <div className="inscription-control">
+            <div className="Prof-control">
               <label htmlFor="" className="inscription-nom">Cours</label>
-              <input type="text" className="inscription-input"  />
+              <input type="text" className="Prof-input" placeholder='cours...' />
             </div>
             <button className="inscription-btn">Valider</button>
           </div>

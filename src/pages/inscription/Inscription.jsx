@@ -2,9 +2,12 @@ import { InsertChartOutlinedSharp } from '@mui/icons-material'
 import './inscription.css'
 import user from '../../assets/img/user.jpg'
 import { useState } from 'react'
+import DatePicker from "react-datepicker";
 
 const Inscription = () => {
 
+    const [startDatedeNaiss, setStartDatedeNaiss] = useState(new Date());
+    const [startDate, setStartDate] = useState(new Date());
     const [posts, setPosts] = useState({
         nom: '',
         postnom: '',
@@ -43,12 +46,12 @@ const Inscription = () => {
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Date de naissance</label>
-                            <input type="date" className="inscription-input" onChange={handChange} name='datedenaissance' />
+                            <DatePicker showIcon selected={startDatedeNaiss} onChange={(date) => setStartDatedeNaiss(date)} name='datedenaissance' className="inscription-input"/>
                         </div>
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Lieu de naissance</label>
-                            <input type="date" className="inscription-input" onChange={handChange} name='lieudenaissance'/>
+                            <DatePicker showIcon selected={startDate} onChange={(date) => setStartDate(date)} name='lieudenaissance' className="inscription-input"/>
                         </div>
 
                         <div className="inscription-control">
@@ -89,7 +92,8 @@ const Inscription = () => {
                         <button className="inscription-btn">Valider</button>
                     </div>
                     <div className="inscription-right">
-                        <img src={user} alt="" className="inscription-img" />
+                        <label htmlFor="file"><img src={user} alt="" className="inscription-img" /></label>
+                        <input type="file" id='file' style={{display:'none'}} />
                     </div>
                 </div>
             </div>

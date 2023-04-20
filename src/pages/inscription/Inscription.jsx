@@ -2,23 +2,16 @@ import { InsertChartOutlinedSharp } from '@mui/icons-material'
 import './inscription.css'
 import user from '../../assets/img/user.jpg'
 import { useState } from 'react'
-import DatePicker from "react-datepicker";
 
 const Inscription = () => {
 
-    const [startDatedeNaiss, setStartDatedeNaiss] = useState(new Date());
-    const [startDate, setStartDate] = useState(new Date());
-    const [posts, setPosts] = useState({
-        nom: '',
-        postnom: '',
-        prenom: '',
-        date:'',
-    })
+    const [posts, setPosts] = useState({})
 
     const handChange = (e) =>{
         setPosts((prev)=>({...prev, [e.target.name]: e.target.value}))
     }
-    
+
+    console.log(posts)
   return (
     <>
         <div className="inscription-container">
@@ -46,17 +39,17 @@ const Inscription = () => {
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Date de naissance</label>
-                            <DatePicker showIcon selected={startDatedeNaiss} onChange={(date) => setStartDatedeNaiss(date)} name='datedenaissance' className="inscription-input"/>
+                            <input type="date" className="inscription-input largeur-input" onChange={handChange} name='dateDenaissance' />
                         </div>
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Lieu de naissance</label>
-                            <DatePicker showIcon selected={startDate} onChange={(date) => setStartDate(date)} name='lieudenaissance' className="inscription-input"/>
+                            <input type="text" className="inscription-input" onChange={handChange} name='lieuDenaiss' placeholder="ecrire le lieu..." />
                         </div>
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Fillier</label>
-                            <select name="fillier" id="" className="inscription-select" >
+                            <select name="fillier" id="" className="inscription-select" onChange={handChange} >
                                 <optgroup label='secondaire'>
                                     <option value="premiere">premiere</option>
                                     <option value="deuxieme">deuxieme</option>
@@ -77,14 +70,14 @@ const Inscription = () => {
                         </div>
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Annee scolaire</label>
-                            <input type="date" className="inscription-input largeur-input" onChange={handChange} />
+                            <input type="date" className="inscription-input largeur-input" onChange={handChange} name='anneScolaire' />
                         </div>
                         <div className="inscription-row-radio">
                             <label htmlFor="" className="inscription-nom">Sexe :</label>
-                            <div className="inscription-radio">
-                                <input type="radio" value={"garcon"} name='sexe' />
+                            <div className="inscription-radio" onChange={handChange}>
+                                <input type="radio" value={"h"} name='homme' />
                                 <label htmlFor="" className="inscription-nom">Homme</label>
-                                <input type="radio" value={"femme"} name='sexe' />
+                                <input type="radio" value={"f"} name='homme' />
                                 <label htmlFor="" className="inscription-nom">Femme</label>
                             </div>
                         </div>

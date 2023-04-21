@@ -2,9 +2,10 @@ import './prof.css'
 import { DataGrid } from '@mui/x-data-grid'
 import { DataPresence } from '../../dummy'
 import { useState } from 'react'
-import { Close, DeleteOutline, Person } from '@mui/icons-material'
+import { DeleteOutline, Person } from '@mui/icons-material'
 import { Link } from 'react-router-dom';
 import acha from './../../assets/acha.jpg';
+import Pop from '../pop/Pop'
 
 const Users = () => {
   const [data, setData] = useState(DataPresence);
@@ -17,18 +18,17 @@ const Users = () => {
 
   const columns = [
     {field: 'id', HeaderName: 'ID', width: 70},
-    {field: 'nom', HeaderName: 'nom', width: 200, renderCell: (params) =>{
+    {field: 'nom', HeaderName: 'nom', width: 150, renderCell: (params) =>{
       return <div className="userList">
                 <img src={acha} alt="" className="userImg" />
                 {params.row.nom}
              </div>
     }},
-    {field: 'postnom', HeaderName: 'Postnom', width: 220},
+    {field: 'postnom', HeaderName: 'Postnom', width: 150},
     {field: 'prenom', HeaderName: 'Prenom', width: 120},
-    {field: 'adresse', HeaderName: 'Adresse', width: 160},
-    {field: 'telephone', HeaderName: 'Telephone', width: 160},
+    {field: 'telephone', HeaderName: 'telephone', width: 120},
     {field: 'cours', HeaderName: 'cours', width: 160},
-    {field: 'action', HeaderName: 'Action', width: 150, renderCell: (params) =>{
+    {field: 'action', HeaderName: 'Action', width: 120, renderCell: (params) =>{
         return(
           <>
             <Link to={`/users/${params.row.id}`}><button className="userListBtn">Edit</button></Link>
@@ -44,44 +44,10 @@ const Users = () => {
       <div className="user">
         <div className="usernew">
           <Person/>
-        <button className="userbtn" onClick={()=>{setClose(!close)}} >New professeur</button>
-        { close &&
-        <div className="user-rows">
-          <div className="user-pop">
-            <Close className='user-clock' onClick={()=>{setClose(!close)}}/>
-            <div className="Prof-control">
-              <label htmlFor="" className="inscription-nom">Nom</label>
-              <input type="text" className="Prof-input" placeholder='ecrire le nom...' />
-            </div>
-
-            <div className="Prof-control">
-              <label htmlFor="" className="inscription-nom">Postnom</label>
-                <input type="text" className="Prof-input" placeholder='ecrire le postnom...'  />
-            </div>
-
-            <div className="Prof-control">
-              <label htmlFor="" className="inscription-nom">Prenom</label>
-              <input type="text" className="Prof-input" placeholder='ecrire le prenom...' />
-            </div>
-
-            <div className="Prof-control">
-              <label htmlFor="" className="inscription-nom">Adresse</label>
-                <input type="text" className="Prof-input" placeholder="ecrire l'adresse..." />
-            </div>
-
-            <div className="Prof-control">
-              <label htmlFor="" className="inscription-nom">Telephone</label>
-              <input type="tel" className="Prof-input" placeholder='ecrire le numero...' />
-            </div>
-
-            <div className="Prof-control">
-              <label htmlFor="" className="inscription-nom">Cours</label>
-              <input type="text" className="Prof-input" placeholder='cours...' />
-            </div>
-            <button className="inscription-btn">Valider</button>
-          </div>
-        </div>}
-      </div> 
+          <button className="userbtn" onClick={()=>{setClose(!close)}} >New professeur</button>
+          { close && <Pop close={close} setClose={setClose}/>
+          }
+        </div> 
         <DataGrid rows={data} columns={columns} pageSize={10} checkboxSelection className="userTable" />
       </div>
     </>

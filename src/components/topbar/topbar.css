@@ -25,6 +25,12 @@
 .topbar-icons{
     position: relative;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.topbar-user{
+    font-size: 13px;
+    margin-left: 5px;
 }
 .topbar-not{
     width: 15px;

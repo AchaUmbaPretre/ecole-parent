@@ -1,4 +1,4 @@
-import { Language, NotificationsNone, Settings, WbSunnyOutlined } from '@mui/icons-material'
+import { Language, NotificationsNone, Settings } from '@mui/icons-material'
 import React from 'react'
 import acha from './../../assets/acha.jpg'
 import './topbar.css'
@@ -18,10 +18,8 @@ const Topbar = () => {
             <span className="topbar-not">2</span>
           </div>
           <div className="topbar-icons">
-            <WbSunnyOutlined/>
-          </div>
-          <div className="topbar-icons">
             <img src={acha} alt="" className="topbar-img"/>
+            <span className="topbar-user">admin</span>
           </div>
           <div className="topbar-icons">
             <Settings/>

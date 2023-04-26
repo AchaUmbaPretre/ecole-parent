@@ -2,16 +2,31 @@ import { InsertChartOutlinedSharp } from '@mui/icons-material'
 import './inscription.css'
 import user from '../../assets/img/user.jpg'
 import { useState } from 'react'
+import axios from 'axios'
+import {  useNavigate } from 'react-router-dom'
 
 const Inscription = () => {
 
-    const [posts, setPosts] = useState({})
+    const [posts, setPosts] = useState({});
+    const  [error, setError] = useState(false)
+    const navigate  = useNavigate();
 
     const handChange = (e) =>{
-        setPosts((prev)=>({...prev, [e.target.name]: e.target.value}))
+        setPosts((prev)=>({ ...prev, [e.target.name]: e.target.value }))
     }
+    const handsubmit = async (e) => {
+        e.preventDefault();
 
-    console.log(posts)
+        try{
+            await axios.post("http://localhost:8800/api/eleves/posts", posts);
+            navigate('/')
+        }
+        catch(error){
+            console.log(error)
+            setError(true)
+        }
+    }   
+
   return (
     <>
         <div className="inscription-container">
@@ -39,17 +54,17 @@ const Inscription = () => {
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Date de naissance</label>
-                            <input type="date" className="inscription-input largeur-input" onChange={handChange} name='dateDenaissance' />
+                            <input type="date" className="inscription-input largeur-input" onChange={handChange} name='dateDeNaissance' />
                         </div>
 
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Lieu de naissance</label>
-                            <input type="text" className="inscription-input" onChange={handChange} name='lieuDenaiss' placeholder="ecrire le lieu..." />
+                            <input type="text" className="inscription-input" onChange={handChange} name='lieuDeNaissance' placeholder="ecrire le lieu..." />
                         </div>
 
                         <div className="inscription-control">
-                            <label htmlFor="" className="inscription-nom">Fillier</label>
-                            <select name="fillier" id="" className="inscription-select" onChange={handChange} >
+                            <label htmlFor="" className="inscription-nom">Filier</label>
+                            <select name="filier" id="" className="inscription-select" onChange={handChange} >
                                 <optgroup label='secondaire'>
                                     <option value="premiere">premiere</option>
                                     <option value="deuxieme">deuxieme</option>
@@ -70,25 +85,26 @@ const Inscription = () => {
                         </div>
                         <div className="inscription-control">
                             <label htmlFor="" className="inscription-nom">Annee scolaire</label>
-                            <input type="date" className="inscription-input largeur-input" onChange={handChange} name='anneScolaire' />
+                            <input type="text" className="inscription-input largeur-input" onChange={handChange} name='anneeScolaire' />
                         </div>
                         <div className="inscription-row-radio">
                             <label htmlFor="" className="inscription-nom">Sexe :</label>
                             <div className="inscription-radio" onChange={handChange}>
-                                <input type="radio" value={"h"} name='homme' />
+                                <input type="radio" value={"homme"} name='homme' />
                                 <label htmlFor="" className="inscription-nom">Homme</label>
-                                <input type="radio" value={"f"} name='homme' />
+                                <input type="radio" value={"femme"} name='homme' />
                                 <label htmlFor="" className="inscription-nom">Femme</label>
                             </div>
                         </div>
                         
-                        <button className="inscription-btn">Valider</button>
+                        <button className="inscription-btn" onClick={handsubmit}>Valider</button>
                     </div>
                     <div className="inscription-right">
                         <label htmlFor="file"><img src={user} alt="" className="inscription-img" /></label>
                         <input type="file" id='file' style={{display:'none'}} />
                     </div>
                 </div>
+                { error && <span className="error">Echec de la processus......</span>}
             </div>
         </div>
     </>
